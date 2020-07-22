@@ -30,6 +30,7 @@ export const deepEqual = <T1 extends any, T2 extends any>(
 	if ((value1 as any) === (value2 as any)) return true;
 	if (typeof value1 !== typeof value2) return false;
 	if (typeof value1 !== "object" || typeof value2 !== "object") return false;
+	if (value1 === null || value2 === null) return false;
 
 	const obj1Keys = Object.keys(value1 as any).sort();
 	const obj2Keys = Object.keys(value2 as any).sort();

@@ -1,15 +1,15 @@
 import {
-    createDependenciesEqualityFn,
-    depsShallowEqual,
-    depsDeepEquality,
+	createDependenciesEqualityFn,
+	depsShallowEqual,
+	depsDeepEquality,
 } from "./equality";
 import { createMemoHook } from "./memo";
 import { createDependenciesInfoHook } from "./versions";
 
 export {
-    createDependenciesEqualityFn,
-    depsShallowEqual,
-    depsDeepEquality,
-    createMemoHook,
-    createDependenciesInfoHook,
-}
+	createDependenciesEqualityFn,
+	depsShallowEqual,
+	depsDeepEquality,
+	createMemoHook,
+	createDependenciesInfoHook,
+};
